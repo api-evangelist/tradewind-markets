@@ -1,8 +1,24 @@
 aid: tradewind-markets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tradewind-markets.png
 name: Tradewind Markets
-description: 'Tradewind Markets is a company surfaced as a portfolio company of sapphire-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Tradewind Markets is a fintech company that operates a digital platform for precious
+  metals, using blockchain and distributed-ledger technology to enable the trading, settlement, supply-chain
+  management, and custody of physical commodities. Its VaultChain Gold and VaultChain Silver products
+  represent investment-grade bullion held physically at the Royal Canadian Mint, with ownership tracked
+  on a secure distributed ledger for real-time tracking and transparent auditability. Founded in 2016
+  and adopted by institutions including the Royal Canadian Mint and Kitco, Tradewind was acquired by
+  Wellfield Technologies in 2023. No public developer/API surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/tradewind-markets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Precious Metals
+- Blockchain
+- Commodities
+- Gold
+- Distributed Ledger
+- Custody
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tradewind-markets-domain-security.yml
 - type: Website
   url: https://www.tradewindmarkets.com/
+- type: Blog
+  url: https://tradewindmarkets.com/media/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
